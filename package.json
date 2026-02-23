@@ -1,0 +1,11 @@
+{
+  "name": "com.latondev.weaponsystem",
+  "version": "1.0.0",
+  "displayName": "WeaponSystem",
+  "description": "Description for WeaponSystem.",
+  "unity": "6000.0",
+  "author": {
+    "name": "latondev"
+  },
+  "dependencies": {}
+}

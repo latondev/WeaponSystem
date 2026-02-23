@@ -1,0 +1,12 @@
+{
+  "name": "WeaponSystem.Editor",
+  "rootNamespace": "WeaponSystem.Editor",
+  "references": ["WeaponSystem.Runtime"],
+  "includePlatforms": ["Editor"],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
+}
