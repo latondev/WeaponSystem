@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace PullGame
 {
-	public class AmmoSystem
+	public class AmmoSystem : IAmmoSystem
 	{
 	    private readonly AmmoConfig config;
 	    

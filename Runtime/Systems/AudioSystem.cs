@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace PullGame
 {
-	public class AudioSystem
+	public class AudioSystem : IAudioSystem
 	{
 	    private readonly GameObject owner;
 	    private readonly AudioConfig config;

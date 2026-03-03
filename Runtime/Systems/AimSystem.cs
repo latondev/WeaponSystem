@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace PullGame
 {
-	public class AimSystem
+	public class AimSystem : IAimSystem
 	{
 	    private readonly Transform weaponTransform;
 	    private readonly AimConfig config;

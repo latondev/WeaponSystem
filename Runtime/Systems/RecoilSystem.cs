@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace PullGame
 {
-	public class RecoilSystem
+	public class RecoilSystem : IRecoilSystem
 	{
 	    private readonly RecoilConfig config;
 	    
@@ -28,7 +28,7 @@ namespace PullGame
 	    {
 	        if (!config.enabled) return;
 	        
-	        recoilFactor += Time.deltaTime;
+	        recoilFactor = 1f;
 	        timeSinceLastShot = 0f;
 	    }
 	    
@@ -36,7 +36,7 @@ namespace PullGame
 	    {
 	        if (!config.enabled) return 0f;
 	        
-	        float curveValue = config.recoilCurve.Evaluate(Mathf.Clamp01(recoilFactor / config.recoveryTime));
+	        float curveValue = config.recoilCurve.Evaluate(Mathf.Clamp01(recoilFactor));
 	        return Random.Range(-config.force, config.force) * curveValue;
 	    }
 	}

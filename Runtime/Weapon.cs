@@ -1,5 +1,7 @@
+using System;
 using UnityEngine;
 using UnityEngine.Events;
+using Random = UnityEngine.Random;
 
 namespace PullGame
 {
@@ -14,9 +16,9 @@ namespace PullGame
 	    [SerializeField] private KeyCode reloadKey = KeyCode.R;
 	    
 	    [Header("Events")]
-	    public UnityEvent onShoot;
-	    public UnityEvent onReloadStart;
-	    public UnityEvent onReloadEnd;
+	    public Action onShoot;
+	    public Action onReloadStart;
+	    public Action onReloadEnd;
 	    
 	    [Header("Targeting")]
 	    [SerializeField] private Transform defaultProjectileTarget;
