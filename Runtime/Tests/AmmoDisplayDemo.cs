@@ -31,6 +31,8 @@ namespace PullGame.WeaponSystem.Demo
         
         private void Start()
         {
+
+            //stest
             if (weapon == null)
             {
                 weapon = GetComponentInChildren<Weapon>();
